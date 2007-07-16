@@ -8,14 +8,14 @@ WriteMakefile (
     PREREQ_PM       => { 
                         'Getopt::Std'               => 0,
                         'Test::More'                => 0, 
-                        'Poe'                       => 0,
-                        'CPANPLUS'                  => '0.051',
-                        'CPANPLUS::Shell::Default'  => '0.051',
+                        'POE'                       => 0,
+                        'CPANPLUS'                  => '0.081',
                         'IO::String'                => 0,
                         'Locale::Maketext::Simple'  => 0,
                         'Params::Check'             => '0.22',
                         'Object::Accessor'          => '0.02',
                     },
+    EXE_FILES       => [ qw|bin/cpanpd| ],                    
     AUTHOR          => 'Jos Boumans <kane[at]cpan.org>',
 	ABSTRACT        => 'Remote CPANPLUS Administration Daemon'
 );     
